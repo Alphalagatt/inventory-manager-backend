@@ -34,7 +34,7 @@ router.get('/:id',(req,res,next)=>{
 
 router.post('/',(req,res,next)=>{
     prod={
-        _id:Mongoose.Types.ObjectId,
+        _id:Mongoose.Types.ObjectId(),
         prodId:req.body.prodId,
         prodName:req.body.prodName,
         prodDesc:req.body.prodDesc,
